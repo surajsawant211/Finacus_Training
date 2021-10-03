@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+
+    <!--Destructuring is Easily extract array elements or object properties and store them in variables -->
+    <script>
+        // ------------------example of array--------------------------
+        const numbers = [1,2,3];
+        [num1,num2] = numbers;
+        console.log(num1,num2);
+
+        // ----------------------example of array----------------------
+        const favrtLnaguage =['python','java','js','ruby']
+        // es5
+        // var top1 = favrtLnaguage[0]
+        // var top2 = favrtLnaguage[1]
+        // var top3 = favrtLnaguage[2]
+
+        // console.log("my favrt programming language is " + top1)
+
+        // es6
+        // let [top1,top2,top3] = favrtLnaguage;
+        // console.log("my favrt lang is " +top1)
+
+        console.log(favrtLnaguage.length)
+        let[top1,,,toplast] = favrtLnaguage
+        console.log(`my favrt prog lang is ${top1} and my top last prog lang is ${toplast}.`)
+    </script>
+</body>
+</html>

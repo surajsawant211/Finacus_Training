@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        // example of object
+        const biodata={
+            name:'suraj',
+            age: 24,
+            degree : 'BE',
+            hobb: {
+                fisrt: 'playing guitar',
+                sec: 'singing'
+            }
+
+        }
+        let {name,age,degree,hobb} =biodata
+        console.log(`my name is ${name} and my age is ${age} and my qualification is ${degree} and my hobby is ${hobb.sec}`)
+    </script>
+</body>
+</html>
